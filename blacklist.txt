@@ -1,0 +1,5 @@
+# We The People: domain blacklist
+# One domain per line. No protocol, no path. Lines starting with # are ignored.
+# Domains added here are never fetched by the skill.
+# Add via the agent when it flags a suspicious site, or edit manually.
+
