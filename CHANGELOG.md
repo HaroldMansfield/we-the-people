@@ -7,6 +7,27 @@ This project follows [Semantic Versioning](https://semver.org/):
 
 ---
 
+## [1.3.0]: 2026-10-04
+
+### Changed
+- Prepared the repository for public release under Harold Mansfield and Seeker One.
+- Updated README positioning, support information, and license language.
+- Replaced older project references with Seeker One attribution.
+- Clarified that helper scripts directly support Congress.gov and FEC, while other listed sources are used through normal web lookup.
+- Tightened skill scope language around civic records, harassment, targeting, and private personal information.
+
+### Security
+- Redacted API keys from helper script error output so users do not accidentally paste keys into issues, logs, screenshots, or support requests.
+- Replaced a fake-looking sample API key in `setup.sh` with a clear placeholder.
+
+### Verified
+- Confirmed the public repo contains every file from the original skill package.
+- Confirmed `SKILL.md` frontmatter and required environment variable declarations are present.
+- Confirmed Python helper scripts compile.
+- Confirmed old project donation references were removed.
+
+---
+
 ## [1.2]: 2026-05-10
 
 ### Added
@@ -50,6 +71,7 @@ This project follows [Semantic Versioning](https://semver.org/):
 - Installation instructions for Claude-compatible platforms, agent platform, Claude Code, and Codex.
 - Custom non-commercial license (later tightened in 1.1).
 
+[1.3.0]: https://github.com/HaroldMansfield/we-the-people/releases/tag/v1.3.0
 [1.2]: https://github.com/HaroldMansfield/we-the-people/releases/tag/v1.2
 [1.1]: https://github.com/HaroldMansfield/we-the-people/releases/tag/v1.1
 [1.0]: https://github.com/HaroldMansfield/we-the-people/releases/tag/v1.0

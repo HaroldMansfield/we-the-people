@@ -256,6 +256,14 @@ we-the-people/
 
 ---
 
+## Release Information
+
+Current version: `1.3.0`
+
+Release notes are tracked in [CHANGELOG.md](CHANGELOG.md). The release process and safety review checklist are documented in [RELEASES.md](RELEASES.md).
+
+---
+
 ## License
 
 Free to use and modify for personal, internal, educational, research, journalism, nonprofit, civic, and public-interest work. Redistribution requires credit to the original source and Seeker One. Commercial use requires separate written permission when the skill is a material part of a paid product, paid service, client deliverable, subscription, or commercial offering.
