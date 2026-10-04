@@ -1,14 +1,12 @@
-<img src="https://labb.run/wp-content/uploads/2026/05/we-the-people.png">
-
 # We The People
 
-> "People shouldn't be afraid of their government. Governments should be afraid of their people." - V
+> A civic lookup skill for turning public legislative records into sourced answers.
 
 **A bill and legislation lookup skill for AI agents.**
 
 Ask your AI agent about a bill, a senator, a campaign donor, or a lobbying disclosure. We The People returns the answer with sources cited. Built for civic engagement, journalism, advocacy, and anyone who wants to know what the U.S. government and their elected representatives are actually doing.
 
-Works with **Hermes Agent**, **Claude Code**, **Codex**, and any other agent platform that supports the [agentskills.io](https://agentskills.io) standard. One install, all platforms.
+Works with **Hermes Agent**, **Claude Code**, **Codex**, and other agent platforms that support Anthropic-style skills.
 
 ---
 
@@ -27,9 +25,9 @@ Ask questions like:
 > *"Has this immigration bill been introduced before?"*<br>
 > *"What did Bernie Sanders say about the Inflation Reduction Act on the Senate floor?"*
 
-We The People pulls the answer from authoritative sources. Congress.gov, the FEC, OpenSecrets, Unusual Whales, Senate lobbying disclosures, C-SPAN, and more, then gives you the answer with links you can verify yourself.
+We The People helps pull answers from public sources such as Congress.gov, the FEC, OpenSecrets, Unusual Whales, Senate lobbying disclosures, C-SPAN, and more, then gives you links you can verify yourself.
 
-It's a **lookup tool**. You ask, it answers, you decide what to do with the information.
+It's a **lookup tool**. You ask, it helps retrieve sourced public information, and you decide what to do with it.
 
 ---
 
@@ -208,6 +206,9 @@ For troubleshooting, see [`SETUP.md`](SETUP.md).
 
 Full source list with URLs in [`references/sources.md`](references/sources.md).
 
+**Important:** the included helper scripts support Congress.gov and the FEC. Other sources listed in this repository are used through normal web lookup by the agent.
+
+
 ---
 
 ## What you need
@@ -216,7 +217,7 @@ Full source list with URLs in [`references/sources.md`](references/sources.md).
 - A free **api.data.gov** API key (covers both Congress.gov and FEC)
 - Python 3 and `bash` (for the helper scripts and setup)
 
-That's it. Everything is free. Everything is public-record. No paid services, no data brokers.
+That's it. Everything is free. Everything is public-record. No paid services, no data brokers. Use it for public civic research, not targeting or harassment.
 
 ---
 
@@ -257,13 +258,9 @@ we-the-people/
 
 ## License
 
-**Free for non-commercial use**, including personal use, journalism, advocacy, research, education, students, civic work, and nonprofits.
+Free to use and modify for personal, internal, educational, research, journalism, nonprofit, civic, and public-interest work. Redistribution requires credit to the original source and Seeker One. Commercial use requires separate written permission when the skill is a material part of a paid product, paid service, client deliverable, subscription, or commercial offering.
 
-**Commercial use is not permitted** under this license. You may not sell, repackage, rebrand, or redistribute the Software as your own product, and you may not bundle it with paid services or use it as a material part of a commercial deliverable.
-
-For commercial licensing inquiries, contact **hm@smbconsultants.ai**.
-
-Full terms in [`LICENSE`](./LICENSE).
+Full terms are in [`LICENSE`](./LICENSE).
 
 ---
 
@@ -279,9 +276,6 @@ Do not use it to target individuals. That use is explicitly prohibited by the li
 
 ## Support and contributions
 
-Built by [Harold Mansfield](https://www.linkedin.com/in/haroldmansfield/)<br>
-Website: [SMBConsultants.ai](https://smbconsultants.ai)
+Built by [Harold Mansfield](https://www.linkedin.com/in/haroldmansfield/), founder and researcher at [Seeker One](https://seeker.one).
 
-Questions, bug reports, feature requests: https://github.com/HaroldMansfield/we-the-people/issues
-
-If this skill is useful to your work, consider supporting its development at [The Samaritan Project](https://buymeacoffee.com/thesamaritanproject).
+Questions, bug reports, and feature requests: https://github.com/HaroldMansfield/we-the-people/issues

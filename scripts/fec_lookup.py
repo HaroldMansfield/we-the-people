@@ -25,6 +25,18 @@ import urllib.error
 import urllib.parse
 import urllib.request
 
+
+def redact_url(url):
+    """Return a URL safe for logs by redacting API keys."""
+    return re_sub_api_key(url)
+
+
+def re_sub_api_key(url):
+    parsed = urllib.parse.urlsplit(url)
+    pairs = urllib.parse.parse_qsl(parsed.query, keep_blank_values=True)
+    redacted = [(k, "REDACTED" if k.lower() == "api_key" else v) for k, v in pairs]
+    return urllib.parse.urlunsplit((parsed.scheme, parsed.netloc, parsed.path, urllib.parse.urlencode(redacted, doseq=True), parsed.fragment))
+
 API_BASE = "https://api.open.fec.gov/v1"
 
 
@@ -49,7 +61,7 @@ def api_get(endpoint, params):
         with urllib.request.urlopen(url, timeout=30) as resp:
             return json.loads(resp.read().decode("utf-8"))
     except urllib.error.HTTPError as e:
-        print(f"FEC API error: {e.code} {e.reason} - {url}", file=sys.stderr)
+        print(f"FEC API error: {e.code} {e.reason} - {redact_url(url)}", file=sys.stderr)
         sys.exit(3)
     except urllib.error.URLError as e:
         print(f"Network error: {e}", file=sys.stderr)

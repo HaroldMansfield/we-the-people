@@ -20,7 +20,7 @@ This skill uses two free U.S. government APIs:
 - `CONGRESS_API_KEY`: for the Congress.gov API
 - `FEC_API_KEY`: for the FEC OpenFEC API
 
-Both can be the same value. they're both gated through api.data.gov.
+Both can be the same value. both are gated through api.data.gov.
 
 If keys are missing, the skill falls back to web search of the same data on
 the public sites. slower, but works. See `SETUP.md` for installation and key

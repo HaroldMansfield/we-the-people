@@ -36,7 +36,7 @@ Both run through api.data.gov, which means ONE key covers both.
      business validation, no waiting list.
 
   3. Your API key is emailed to you immediately. It looks like:
-       Pi8zT1YjN3GqXrU2VkOaWf5HsB6cMmL0RpQeKtNb
+       <your-api-data-gov-key>
 
   4. Copy the key and come back here.
 
